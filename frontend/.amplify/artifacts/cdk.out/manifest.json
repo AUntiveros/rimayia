@@ -1,0 +1,1888 @@
+{
+  "version": "48.0.0",
+  "artifacts": {
+    "amplify-rimiapp-alvaro-sandbox-821d8bbebd.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "amplify-rimiapp-alvaro-sandbox-821d8bbebd.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "amplify-rimiapp-alvaro-sandbox-821d8bbebd": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "amplify-rimiapp-alvaro-sandbox-821d8bbebd.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "amplify:deployment-type": "sandbox",
+          "created-by": "amplify"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/8892955632aa462e11cec1bfddadb5477a3409adb8d1298170b08880147aba35.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "amplify-rimiapp-alvaro-sandbox-821d8bbebd.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "amplify-rimiapp-alvaro-sandbox-821d8bbebd.assets"
+      ],
+      "metadata": {
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "amplify:deployment-type",
+                "Value": "sandbox"
+              },
+              {
+                "Key": "created-by",
+                "Value": "amplify"
+              }
+            ]
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/deploymentType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deploymentType"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "region"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyAuth/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPool4BA7F805"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyAuth/UserPoolAppClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPoolAppClient2626C6F8"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyAuth/IdentityPool": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPool3FDE84CC"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyAuth/authenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthunauthenticatedUserRole2B524D9E"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyAuth/IdentityPoolRoleAttachment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPoolRoleAttachment045F17C8"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthUserPool717EB70BRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthUserPool717EB70BRef"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthUserPoolAppClient11C23F05Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthUserPoolAppClient11C23F05Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth/amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/auth.NestedStack/auth.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "auth179371D7"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/userPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "userPoolId"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/webClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "webClientId"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/identityPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "identityPoolId"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/authRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authRegion"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/allowUnauthenticatedIdentities": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "allowUnauthenticatedIdentities"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/signupAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "signupAttributes"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/usernameAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "usernameAttributes"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/verificationMechanisms": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "verificationMechanisms"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/passwordPolicyMinLength": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyMinLength"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/passwordPolicyRequirements": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyRequirements"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/mfaConfiguration": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaConfiguration"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/mfaTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaTypes"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/socialProviders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "socialProviders"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/oauthCognitoDomain": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthCognitoDomain"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/oauthScope": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthScope"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/oauthRedirectSignIn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignIn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/oauthRedirectSignOut": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignOut"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/oauthResponseType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthResponseType"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/oauthClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthClientId"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/groups": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "groups"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/link-family-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "linkfamilylambdaServiceRole0D8EDFC8"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/link-family-lambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "linkfamilylambdaServiceRoleDefaultPolicy65CE7933"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/link-family-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "linkfamilylambdaFCB05C99"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/GraphQLAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPI42A6FA33"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/GraphQLAPI/TransformerSchema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPITransformerSchemaFF50A789"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/GraphQLAPI/DefaultApiKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPIDefaultApiKey1C8ED374"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/GraphQLAPI/NONE_DS": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/GraphQLAPI/NONE_DS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPINONEDS684BF699"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/AmplifyManagedTableIsCompleteRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableIsCompleteRoleF825222C"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleB4E71DEA"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleDefaultPolicyF6DABCB6"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkonEvent1DFC2ECC"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-isComplete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkisComplete2E51021B"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRole470BE899"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRoleDefaultPolicy89F3836A"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachine060600BC"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/reference-to-amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager/amplifyrimiappalvarosandbox821d8bbebddataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent620FB3B4Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebddataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent620FB3B4Arn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyTableManager.NestedStack/AmplifyTableManager.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource86290833"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/HasEnvironmentParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEnvironmentParameter"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/ShouldUsePayPerRequestBilling": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePayPerRequestBilling"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/ShouldUsePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePointInTimeRecovery"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/UserTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "User"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/UserTable/Default/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserTable"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "User"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/CustomTableUserTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "User"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/GetAttUserTableStreamArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttUserTableStreamArn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/GetAttUserTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttUserTableName"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/UserIAMRole": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "UserIAMRole"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/UserIAMRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserIAMRole93CEE926"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "UserIAMRole"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/UserDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "UserTable"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/UserDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "UserTable"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/QuerygetUserauth0Function/QuerygetUserauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetUserauth0FunctionQuerygetUserauth0FunctionAppSyncFunction9E6250B0"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetUserauth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/QuerygetUserpostAuth0Function/QuerygetUserpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetUserpostAuth0FunctionQuerygetUserpostAuth0FunctionAppSyncFunction2792AC60"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetUserpostAuth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/QueryGetUserDataResolverFn/QueryGetUserDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryGetUserDataResolverFnQueryGetUserDataResolverFnAppSyncFunction36A3E4CF"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryGetUserDataResolverFn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/queryGetUserResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetUserResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.getUser"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/QuerylistUsersauth0Function/QuerylistUsersauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistUsersauth0FunctionQuerylistUsersauth0FunctionAppSyncFunctionA1FF61AB"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistUsersauth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/QuerylistUserspostAuth0Function/QuerylistUserspostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistUserspostAuth0FunctionQuerylistUserspostAuth0FunctionAppSyncFunction37C5583D"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistUserspostAuth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/QueryListUsersDataResolverFn/QueryListUsersDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryListUsersDataResolverFnQueryListUsersDataResolverFnAppSyncFunction83574EBA"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryListUsersDataResolverFn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/queryListUsersResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ListUserResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.listUsers"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationcreateUserinit0Function/MutationcreateUserinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateUserinit0FunctionMutationcreateUserinit0FunctionAppSyncFunctionEDF87EC6"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateUserinit0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationcreateUserauth0Function/MutationcreateUserauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateUserauth0FunctionMutationcreateUserauth0FunctionAppSyncFunction30556A6C"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateUserauth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationcreateUserpostAuth0Function/MutationcreateUserpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateUserpostAuth0FunctionMutationcreateUserpostAuth0FunctionAppSyncFunction176E20CB"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateUserpostAuth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationCreateUserDataResolverFn/MutationCreateUserDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationCreateUserDataResolverFnMutationCreateUserDataResolverFnAppSyncFunction22E7974E"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationCreateUserDataResolverFn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/mutationCreateUserResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CreateUserResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.createUser"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationupdateUserinit0Function/MutationupdateUserinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateUserinit0FunctionMutationupdateUserinit0FunctionAppSyncFunctionC2E8A924"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateUserinit0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationupdateUserauth0Function/MutationupdateUserauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateUserauth0FunctionMutationupdateUserauth0FunctionAppSyncFunctionDF95DA65"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateUserauth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationupdateUserpostAuth0Function/MutationupdateUserpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateUserpostAuth0FunctionMutationupdateUserpostAuth0FunctionAppSyncFunctionD4B80000"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateUserpostAuth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationUpdateUserDataResolverFn/MutationUpdateUserDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationUpdateUserDataResolverFnMutationUpdateUserDataResolverFnAppSyncFunction6ADF3910"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationUpdateUserDataResolverFn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/mutationUpdateUserResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UpdateUserResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.updateUser"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationdeleteUserauth0Function/MutationdeleteUserauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteUserauth0FunctionMutationdeleteUserauth0FunctionAppSyncFunction9B900ACD"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteUserauth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationdeleteUserpostAuth0Function/MutationdeleteUserpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteUserpostAuth0FunctionMutationdeleteUserpostAuth0FunctionAppSyncFunction9B804910"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteUserpostAuth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/MutationDeleteUserDataResolverFn/MutationDeleteUserDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationDeleteUserDataResolverFnMutationDeleteUserDataResolverFnAppSyncFunction0B4F366A"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationDeleteUserDataResolverFn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/mutationDeleteUserResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteUserResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.deleteUser"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/SubscriptiononCreateUserauth0Function/SubscriptiononCreateUserauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateUserauth0FunctionSubscriptiononCreateUserauth0FunctionAppSyncFunctionE9B4721A"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateUserauth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/SubscriptiononCreateUserpostAuth0Function/SubscriptiononCreateUserpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateUserpostAuth0FunctionSubscriptiononCreateUserpostAuth0FunctionAppSyncFunction62AE12DA"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateUserpostAuth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/SubscriptionOnCreateUserDataResolverFn/SubscriptionOnCreateUserDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnCreateUserDataResolverFnSubscriptionOnCreateUserDataResolverFnAppSyncFunction23B2F1B9"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnCreateUserDataResolverFn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/subscriptionOnCreateUserResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateUserResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onCreateUser"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/SubscriptiononUpdateUserauth0Function/SubscriptiononUpdateUserauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateUserauth0FunctionSubscriptiononUpdateUserauth0FunctionAppSyncFunction78530C9F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateUserauth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/SubscriptiononUpdateUserpostAuth0Function/SubscriptiononUpdateUserpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateUserpostAuth0FunctionSubscriptiononUpdateUserpostAuth0FunctionAppSyncFunctionF3EF85D1"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateUserpostAuth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/SubscriptionOnUpdateUserDataResolverFn/SubscriptionOnUpdateUserDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnUpdateUserDataResolverFnSubscriptionOnUpdateUserDataResolverFnAppSyncFunction93FA5DF6"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnUpdateUserDataResolverFn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/subscriptionOnUpdateUserResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateUserResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onUpdateUser"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/SubscriptiononDeleteUserauth0Function/SubscriptiononDeleteUserauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteUserauth0FunctionSubscriptiononDeleteUserauth0FunctionAppSyncFunction0C5B7186"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteUserauth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/SubscriptiononDeleteUserpostAuth0Function/SubscriptiononDeleteUserpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteUserpostAuth0FunctionSubscriptiononDeleteUserpostAuth0FunctionAppSyncFunction24A5E815"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteUserpostAuth0Function"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/SubscriptionOnDeleteUserDataResolverFn/SubscriptionOnDeleteUserDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnDeleteUserDataResolverFnSubscriptionOnDeleteUserDataResolverFnAppSyncFunction2BEB0972"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnDeleteUserDataResolverFn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/subscriptionOnDeleteUserResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteUserResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onDeleteUser"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/reference-to-amplifyrimiappalvarosandbox821d8bbebddataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResourceAA2893EEOutputs.amplifyrimiappalvarosandbox821d8bbebddataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent620FB3B4Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResourceAA2893EEOutputsamplifyrimiappalvarosandbox821d8bbebddataamplifyDataAmplifyTableManagerTableManagerCustomProvi3776489D"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/reference-to-amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/reference-to-amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPINONEDS774E36E0Name": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPINONEDS774E36E0Name"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/reference-to-amplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputs.amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/reference-to-amplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputs.amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User/reference-to-amplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputs.amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/User.NestedStack/User.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataUserNestedStackUserNestedStackResource9488907F"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/HasEnvironmentParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEnvironmentParameter"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVincularFamiliarLambdaDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FnVincularFamiliarLambdaDataSource"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVincularFamiliarLambdaDataSource/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnVincularFamiliarLambdaDataSourceServiceRoleB12A9DFF"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVincularFamiliarLambdaDataSource/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnVincularFamiliarLambdaDataSourceServiceRoleDefaultPolicy244C5917"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVincularFamiliarLambdaDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnVincularFamiliarLambdaDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FnVincularFamiliarLambdaDataSource"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/InvokeFnVincularFamiliarLambdaDataSource/InvokeFnVincularFamiliarLambdaDataSource.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InvokeFnVincularFamiliarLambdaDataSourceInvokeFnVincularFamiliarLambdaDataSourceAppSyncFunction3FECC4ED"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "InvokeFnVincularFamiliarLambdaDataSource"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/mutationVincularFamiliarResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationvincularFamiliarResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.vincularFamiliar"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVerDashboardFamiliarLambdaDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FnVerDashboardFamiliarLambdaDataSource"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVerDashboardFamiliarLambdaDataSource/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnVerDashboardFamiliarLambdaDataSourceServiceRole486DD962"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVerDashboardFamiliarLambdaDataSource/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnVerDashboardFamiliarLambdaDataSourceServiceRoleDefaultPolicy5D861580"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVerDashboardFamiliarLambdaDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnVerDashboardFamiliarLambdaDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FnVerDashboardFamiliarLambdaDataSource"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/InvokeFnVerDashboardFamiliarLambdaDataSource/InvokeFnVerDashboardFamiliarLambdaDataSource.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InvokeFnVerDashboardFamiliarLambdaDataSourceInvokeFnVerDashboardFamiliarLambdaDataSourceAppSyncFunction272B5BAE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "InvokeFnVerDashboardFamiliarLambdaDataSource"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/queryVerDashboardFamiliarResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryverDashboardFamiliarResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.verDashboardFamiliar"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/MutationVincularFamiliarAuthFN/MutationVincularFamiliarAuthFN.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationVincularFamiliarAuthFNMutationVincularFamiliarAuthFNAppSyncFunction19046DDF"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationVincularFamiliarAuthFN"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/QueryVerDashboardFamiliarAuthFN/QueryVerDashboardFamiliarAuthFN.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryVerDashboardFamiliarAuthFNQueryVerDashboardFamiliarAuthFNAppSyncFunction0656A139"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryVerDashboardFamiliarAuthFN"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/reference-to-amplifyrimiappalvarosandbox821d8bbebddatalinkfamilylambda785930C0Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebddatalinkfamilylambda785930C0Arn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/reference-to-amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/reference-to-amplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputs.amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/reference-to-amplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputs.amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/reference-to-amplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputs.amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/reference-to-amplifyrimiappalvarosandbox821d8bbebdfunctionNestedStackfunctionNestedStackResourceF110635COutputs.amplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdfunctionNestedStackfunctionNestedStackResourceF110635COutputsamplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Arn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/reference-to-amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPINONEDS774E36E0Name": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPINONEDS774E36E0Name"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack.NestedStack/FunctionDirectiveStack.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataFunctionDirectiveStackNestedStackFunctionDirectiveStackNestedStackResource1246A302"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucket9CCB4ACA"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketPolicyF1C1C548"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketAutoDeleteObjectsCustomResource437F26F5"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentAwsCliLayerE322F905"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/CustomResource-1536MiB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB21775929"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 2
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 2
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleA41FC8C2"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleDefaultPolicyFF1C635B"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBC5D8AB21"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/modelIntrospectionSchemaBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketF566B665"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/modelIntrospectionSchemaBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketPolicy4DAB0D15"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/modelIntrospectionSchemaBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketAutoDeleteObjectsCustomResourceFE57309F"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/modelIntrospectionSchemaBucketDeployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketDeploymentAwsCliLayer13C432F7"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/modelIntrospectionSchemaBucketDeployment/CustomResource-1536MiB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketDeploymentCustomResource1536MiB104B97EC"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/AMPLIFY_DATA_GRAPHQL_ENDPOINTParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAGRAPHQLENDPOINTParameter1C2CBB16"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_BUCKET_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAMODELINTROSPECTIONSCHEMABUCKETNAMEParameter47BF4F44"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_KEYParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAMODELINTROSPECTIONSCHEMAKEYParameterB6AEAE8A"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/AMPLIFY_DATA_DEFAULT_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATADEFAULTNAMEParameterE7C23CC4"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/reference-to-amplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputs.amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthUserPool717EB70BRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthUserPool717EB70BRef"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/reference-to-amplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputs.amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/reference-to-amplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputs.amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/reference-to-amplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputs.amplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/reference-to-amplifyrimiappalvarosandbox821d8bbebdfunctionNestedStackfunctionNestedStackResourceF110635COutputs.amplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyrimiappalvarosandbox821d8bbebdfunctionNestedStackfunctionNestedStackResourceF110635COutputsamplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Arn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyrimiappalvarosandbox821d8bbebddatalinkfamilylambda785930C0Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebddatalinkfamilylambda785930C0Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBGraphQLUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBGraphQLUrl"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyrimiappalvarosandbox821d8bbebddataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiBDBB6F4BBDestinationBucketArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebddataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiBDBB6F4BBDestinationBucketArn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPIDefaultApiKey37406D76ApiKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPIDefaultApiKey37406D76ApiKey"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/data.NestedStack/data.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "data7552DF31"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/definedFunctions": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "definedFunctions"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/function/get-dashboard-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getdashboardlambdaServiceRoleC1ED2628"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/function/get-dashboard-lambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getdashboardlambdaServiceRoleDefaultPolicy7D3EDE8C"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/function/get-dashboard-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getdashboardlambda36163150"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/function/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/function/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/function/amplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Arn"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/function/amplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Ref"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/function.NestedStack/function.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "function1351588B"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/awsAppsyncApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiId"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/awsAppsyncApiEndpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiEndpoint"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/awsAppsyncAuthenticationType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAuthenticationType"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/awsAppsyncRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncRegion"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/amplifyApiModelSchemaS3Uri": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyApiModelSchemaS3Uri"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/awsAppsyncApiKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiKey"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/awsAppsyncAdditionalAuthenticationTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAdditionalAuthenticationTypes"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/amplify-rimiapp-alvaro-sandbox-821d8bbebd/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "amplify-rimiapp-alvaro-sandbox-821d8bbebd"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "aws-cdk-lib/feature-flag-report": {
+      "type": "cdk:feature-flag-report",
+      "properties": {
+        "module": "aws-cdk-lib",
+        "flags": {
+          "@aws-cdk/aws-signer:signingProfileNamePassedToCfn": {
+            "recommendedValue": true,
+            "explanation": "Pass signingProfileName to CfnSigningProfile"
+          },
+          "@aws-cdk/core:newStyleStackSynthesis": {
+            "recommendedValue": true,
+            "explanation": "Switch to new stack synthesis method which enables CI/CD",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/core:stackRelativeExports": {
+            "recommendedValue": true,
+            "explanation": "Name exports based on the construct paths relative to the stack, rather than the global construct path",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-ecs-patterns:secGroupsDisablesImplicitOpenListener": {
+            "recommendedValue": true,
+            "explanation": "Disable implicit openListener when custom security groups are provided"
+          },
+          "@aws-cdk/aws-rds:lowercaseDbIdentifier": {
+            "recommendedValue": true,
+            "explanation": "Force lowercasing of RDS Cluster names in CDK",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": {
+            "recommendedValue": true,
+            "explanation": "Allow adding/removing multiple UsagePlanKeys independently",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-lambda:recognizeVersionProps": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to opt in to the updated logical id calculation for Lambda Version created using the  `fn.currentVersion`.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-lambda:recognizeLayerVersion": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to opt in to the updated logical id calculation for Lambda Version created using the `fn.currentVersion`."
+          },
+          "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to have cloudfront distributions use the security policy TLSv1.2_2021 by default.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/core:checkSecretUsage": {
+            "recommendedValue": true,
+            "explanation": "Enable this flag to make it impossible to accidentally use SecretValues in unsafe locations"
+          },
+          "@aws-cdk/core:target-partitions": {
+            "recommendedValue": [
+              "aws",
+              "aws-cn"
+            ],
+            "explanation": "What regions to include in lookup tables of environment agnostic stacks"
+          },
+          "@aws-cdk-containers/ecs-service-extensions:enableDefaultLogDriver": {
+            "recommendedValue": true,
+            "explanation": "ECS extensions will automatically add an `awslogs` driver if no logging is specified"
+          },
+          "@aws-cdk/aws-ec2:uniqueImdsv2TemplateName": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to have Launch Templates generated by the `InstanceRequireImdsv2Aspect` use unique names."
+          },
+          "@aws-cdk/aws-ecs:arnFormatIncludesClusterName": {
+            "recommendedValue": true,
+            "explanation": "ARN format used by ECS. In the new ARN format, the cluster name is part of the resource ID."
+          },
+          "@aws-cdk/aws-iam:minimizePolicies": {
+            "recommendedValue": true,
+            "explanation": "Minimize IAM policies by combining Statements"
+          },
+          "@aws-cdk/core:validateSnapshotRemovalPolicy": {
+            "recommendedValue": true,
+            "explanation": "Error on snapshot removal policies on resources that do not support it."
+          },
+          "@aws-cdk/aws-codepipeline:crossAccountKeyAliasStackSafeResourceName": {
+            "recommendedValue": true,
+            "explanation": "Generate key aliases that include the stack name"
+          },
+          "@aws-cdk/aws-s3:createDefaultLoggingPolicy": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to create an S3 bucket policy by default in cases where an AWS service would automatically create the Policy if one does not exist."
+          },
+          "@aws-cdk/aws-sns-subscriptions:restrictSqsDescryption": {
+            "recommendedValue": true,
+            "explanation": "Restrict KMS key policy for encrypted Queues a bit more"
+          },
+          "@aws-cdk/aws-apigateway:disableCloudWatchRole": {
+            "recommendedValue": true,
+            "explanation": "Make default CloudWatch Role behavior safe for multiple API Gateways in one environment"
+          },
+          "@aws-cdk/core:enablePartitionLiterals": {
+            "recommendedValue": true,
+            "explanation": "Make ARNs concrete if AWS partition is known"
+          },
+          "@aws-cdk/aws-events:eventsTargetQueueSameAccount": {
+            "recommendedValue": true,
+            "explanation": "Event Rules may only push to encrypted SQS queues in the same account"
+          },
+          "@aws-cdk/aws-ecs:disableExplicitDeploymentControllerForCircuitBreaker": {
+            "recommendedValue": true,
+            "explanation": "Avoid setting the \"ECS\" deployment controller when adding a circuit breaker"
+          },
+          "@aws-cdk/aws-iam:importedRoleStackSafeDefaultPolicyName": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature to create default policy names for imported roles that depend on the stack the role is in."
+          },
+          "@aws-cdk/aws-s3:serverAccessLogsUseBucketPolicy": {
+            "recommendedValue": true,
+            "explanation": "Use S3 Bucket Policy instead of ACLs for Server Access Logging"
+          },
+          "@aws-cdk/aws-route53-patters:useCertificate": {
+            "recommendedValue": true,
+            "explanation": "Use the official `Certificate` resource instead of `DnsValidatedCertificate`"
+          },
+          "@aws-cdk/customresources:installLatestAwsSdkDefault": {
+            "recommendedValue": false,
+            "explanation": "Whether to install the latest SDK by default in AwsCustomResource"
+          },
+          "@aws-cdk/aws-rds:databaseProxyUniqueResourceName": {
+            "recommendedValue": true,
+            "explanation": "Use unique resource name for Database Proxy"
+          },
+          "@aws-cdk/aws-codedeploy:removeAlarmsFromDeploymentGroup": {
+            "recommendedValue": true,
+            "explanation": "Remove CloudWatch alarms from deployment group"
+          },
+          "@aws-cdk/aws-apigateway:authorizerChangeDeploymentLogicalId": {
+            "recommendedValue": true,
+            "explanation": "Include authorizer configuration in the calculation of the API deployment logical ID."
+          },
+          "@aws-cdk/aws-ec2:launchTemplateDefaultUserData": {
+            "recommendedValue": true,
+            "explanation": "Define user data for a launch template by default when a machine image is provided."
+          },
+          "@aws-cdk/aws-secretsmanager:useAttachedSecretResourcePolicyForSecretTargetAttachments": {
+            "recommendedValue": true,
+            "explanation": "SecretTargetAttachments uses the ResourcePolicy of the attached Secret."
+          },
+          "@aws-cdk/aws-redshift:columnId": {
+            "recommendedValue": true,
+            "explanation": "Whether to use an ID to track Redshift column changes"
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:enableEmrServicePolicyV2": {
+            "recommendedValue": true,
+            "explanation": "Enable AmazonEMRServicePolicy_v2 managed policies"
+          },
+          "@aws-cdk/aws-ec2:restrictDefaultSecurityGroup": {
+            "recommendedValue": true,
+            "explanation": "Restrict access to the VPC default security group"
+          },
+          "@aws-cdk/aws-apigateway:requestValidatorUniqueId": {
+            "recommendedValue": true,
+            "explanation": "Generate a unique id for each RequestValidator added to a method"
+          },
+          "@aws-cdk/aws-kms:aliasNameRef": {
+            "recommendedValue": true,
+            "explanation": "KMS Alias name and keyArn will have implicit reference to KMS Key"
+          },
+          "@aws-cdk/aws-kms:applyImportedAliasPermissionsToPrincipal": {
+            "recommendedValue": true,
+            "explanation": "Enable grant methods on Aliases imported by name to use kms:ResourceAliases condition"
+          },
+          "@aws-cdk/aws-autoscaling:generateLaunchTemplateInsteadOfLaunchConfig": {
+            "recommendedValue": true,
+            "explanation": "Generate a launch template when creating an AutoScalingGroup"
+          },
+          "@aws-cdk/core:includePrefixInUniqueNameGeneration": {
+            "recommendedValue": true,
+            "explanation": "Include the stack prefix in the stack name generation process"
+          },
+          "@aws-cdk/aws-efs:denyAnonymousAccess": {
+            "recommendedValue": true,
+            "explanation": "EFS denies anonymous clients accesses"
+          },
+          "@aws-cdk/aws-opensearchservice:enableOpensearchMultiAzWithStandby": {
+            "recommendedValue": true,
+            "explanation": "Enables support for Multi-AZ with Standby deployment for opensearch domains"
+          },
+          "@aws-cdk/aws-lambda-nodejs:useLatestRuntimeVersion": {
+            "recommendedValue": true,
+            "explanation": "Enables aws-lambda-nodejs.Function to use the latest available NodeJs runtime as the default"
+          },
+          "@aws-cdk/aws-efs:mountTargetOrderInsensitiveLogicalId": {
+            "recommendedValue": true,
+            "explanation": "When enabled, mount targets will have a stable logicalId that is linked to the associated subnet."
+          },
+          "@aws-cdk/aws-rds:auroraClusterChangeScopeOfInstanceParameterGroupWithEachParameters": {
+            "recommendedValue": true,
+            "explanation": "When enabled, a scope of InstanceParameterGroup for AuroraClusterInstance with each parameters will change."
+          },
+          "@aws-cdk/aws-appsync:useArnForSourceApiAssociationIdentifier": {
+            "recommendedValue": true,
+            "explanation": "When enabled, will always use the arn for identifiers for CfnSourceApiAssociation in the GraphqlApi construct rather than id."
+          },
+          "@aws-cdk/aws-rds:preventRenderingDeprecatedCredentials": {
+            "recommendedValue": true,
+            "explanation": "When enabled, creating an RDS database cluster from a snapshot will only render credentials for snapshot credentials."
+          },
+          "@aws-cdk/aws-codepipeline-actions:useNewDefaultBranchForCodeCommitSource": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the CodeCommit source action is using the default branch name 'main'."
+          },
+          "@aws-cdk/aws-cloudwatch-actions:changeLambdaPermissionLogicalIdForLambdaAction": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the logical ID of a Lambda permission for a Lambda action includes an alarm ID."
+          },
+          "@aws-cdk/aws-codepipeline:crossAccountKeysDefaultValueToFalse": {
+            "recommendedValue": true,
+            "explanation": "Enables Pipeline to set the default value for crossAccountKeys to false."
+          },
+          "@aws-cdk/aws-codepipeline:defaultPipelineTypeToV2": {
+            "recommendedValue": true,
+            "explanation": "Enables Pipeline to set the default pipeline type to V2."
+          },
+          "@aws-cdk/aws-kms:reduceCrossAccountRegionPolicyScope": {
+            "recommendedValue": true,
+            "explanation": "When enabled, IAM Policy created from KMS key grant will reduce the resource scope to this key only."
+          },
+          "@aws-cdk/pipelines:reduceAssetRoleTrustScope": {
+            "recommendedValue": true,
+            "explanation": "Remove the root account principal from PipelineAssetsFileRole trust policy",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-eks:nodegroupNameAttribute": {
+            "recommendedValue": true,
+            "explanation": "When enabled, nodegroupName attribute of the provisioned EKS NodeGroup will not have the cluster name prefix."
+          },
+          "@aws-cdk/aws-ec2:ebsDefaultGp3Volume": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the default volume type of the EBS volume will be GP3"
+          },
+          "@aws-cdk/aws-ecs:removeDefaultDeploymentAlarm": {
+            "recommendedValue": true,
+            "explanation": "When enabled, remove default deployment alarm settings"
+          },
+          "@aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault": {
+            "recommendedValue": false,
+            "explanation": "When enabled, the custom resource used for `AwsCustomResource` will configure the `logApiResponseData` property as true by default"
+          },
+          "@aws-cdk/aws-s3:keepNotificationInImportedBucket": {
+            "recommendedValue": false,
+            "explanation": "When enabled, Adding notifications to a bucket in the current stack will not remove notification from imported stack."
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:useNewS3UriParametersForBedrockInvokeModelTask": {
+            "recommendedValue": true,
+            "explanation": "When enabled, use new props for S3 URI field in task definition of state machine for bedrock invoke model.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/core:explicitStackTags": {
+            "recommendedValue": true,
+            "explanation": "When enabled, stack tags need to be assigned explicitly on a Stack."
+          },
+          "@aws-cdk/aws-ecs:enableImdsBlockingDeprecatedFeature": {
+            "recommendedValue": false,
+            "explanation": "When set to true along with canContainersAccessInstanceRole=false in ECS cluster, new updated commands will be added to UserData to block container accessing IMDS. **Applicable to Linux only. IMPORTANT: See [details.](#aws-cdkaws-ecsenableImdsBlockingDeprecatedFeature)**"
+          },
+          "@aws-cdk/aws-ecs:disableEcsImdsBlocking": {
+            "recommendedValue": true,
+            "explanation": "When set to true, CDK synth will throw exception if canContainersAccessInstanceRole is false. **IMPORTANT: See [details.](#aws-cdkaws-ecsdisableEcsImdsBlocking)**"
+          },
+          "@aws-cdk/aws-ecs:reduceEc2FargateCloudWatchPermissions": {
+            "recommendedValue": true,
+            "explanation": "When enabled, we will only grant the necessary permissions when users specify cloudwatch log group through logConfiguration"
+          },
+          "@aws-cdk/aws-dynamodb:resourcePolicyPerReplica": {
+            "recommendedValue": true,
+            "explanation": "When enabled will allow you to specify a resource policy per replica, and not copy the source table policy to all replicas"
+          },
+          "@aws-cdk/aws-ec2:ec2SumTImeoutEnabled": {
+            "recommendedValue": true,
+            "explanation": "When enabled, initOptions.timeout and resourceSignalTimeout values will be summed together."
+          },
+          "@aws-cdk/aws-appsync:appSyncGraphQLAPIScopeLambdaPermission": {
+            "recommendedValue": true,
+            "explanation": "When enabled, a Lambda authorizer Permission created when using GraphqlApi will be properly scoped with a SourceArn."
+          },
+          "@aws-cdk/aws-rds:setCorrectValueForDatabaseInstanceReadReplicaInstanceResourceId": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the value of property `instanceResourceId` in construct `DatabaseInstanceReadReplica` will be set to the correct value which is `DbiResourceId` instead of currently `DbInstanceArn`"
+          },
+          "@aws-cdk/core:cfnIncludeRejectComplexResourceUpdateCreatePolicyIntrinsics": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CFN templates added with `cfn-include` will error if the template contains Resource Update or Create policies with CFN Intrinsics that include non-primitive values."
+          },
+          "@aws-cdk/aws-lambda-nodejs:sdkV3ExcludeSmithyPackages": {
+            "recommendedValue": true,
+            "explanation": "When enabled, both `@aws-sdk` and `@smithy` packages will be excluded from the Lambda Node.js 18.x runtime to prevent version mismatches in bundled applications."
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:fixRunEcsTaskPolicy": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the resource of IAM Run Ecs policy generated by SFN EcsRunTask will reference the definition, instead of constructing ARN."
+          },
+          "@aws-cdk/aws-ec2:bastionHostUseAmazonLinux2023ByDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the BastionHost construct will use the latest Amazon Linux 2023 AMI, instead of Amazon Linux 2."
+          },
+          "@aws-cdk/core:aspectStabilization": {
+            "recommendedValue": true,
+            "explanation": "When enabled, a stabilization loop will be run when invoking Aspects during synthesis.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-route53-targets:userPoolDomainNameMethodWithoutCustomResource": {
+            "recommendedValue": true,
+            "explanation": "When enabled, use a new method for DNS Name of user pool domain target without creating a custom resource."
+          },
+          "@aws-cdk/aws-elasticloadbalancingV2:albDualstackWithoutPublicIpv4SecurityGroupRulesDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the default security group ingress rules will allow IPv6 ingress from anywhere"
+          },
+          "@aws-cdk/aws-iam:oidcRejectUnauthorizedConnections": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the default behaviour of OIDC provider will reject unauthorized connections"
+          },
+          "@aws-cdk/core:enableAdditionalMetadataCollection": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CDK will expand the scope of usage data collected to better inform CDK development and improve communication for security concerns and emerging issues."
+          },
+          "@aws-cdk/aws-lambda:createNewPoliciesWithAddToRolePolicy": {
+            "recommendedValue": false,
+            "explanation": "[Deprecated] When enabled, Lambda will create new inline policies with AddToRolePolicy instead of adding to the Default Policy Statement"
+          },
+          "@aws-cdk/aws-s3:setUniqueReplicationRoleName": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CDK will automatically generate a unique role name that is used for s3 object replication."
+          },
+          "@aws-cdk/pipelines:reduceStageRoleTrustScope": {
+            "recommendedValue": true,
+            "explanation": "Remove the root account principal from Stage addActions trust policy",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-events:requireEventBusPolicySid": {
+            "recommendedValue": true,
+            "explanation": "When enabled, grantPutEventsTo() will use resource policies with Statement IDs for service principals."
+          },
+          "@aws-cdk/core:aspectPrioritiesMutating": {
+            "recommendedValue": true,
+            "explanation": "When set to true, Aspects added by the construct library on your behalf will be given a priority of MUTATING."
+          },
+          "@aws-cdk/aws-dynamodb:retainTableReplica": {
+            "recommendedValue": true,
+            "explanation": "When enabled, table replica will be default to the removal policy of source table unless specified otherwise."
+          },
+          "@aws-cdk/cognito:logUserPoolClientSecretValue": {
+            "recommendedValue": false,
+            "explanation": "When disabled, the value of the user pool client secret will not be logged in the custom resource lambda function logs."
+          },
+          "@aws-cdk/pipelines:reduceCrossAccountActionRoleTrustScope": {
+            "recommendedValue": true,
+            "explanation": "When enabled, scopes down the trust policy for the cross-account action role",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-stepfunctions:useDistributedMapResultWriterV2": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the resultWriterV2 property of DistributedMap will be used insted of resultWriter"
+          },
+          "@aws-cdk/s3-notifications:addS3TrustKeyPolicyForSnsSubscriptions": {
+            "recommendedValue": true,
+            "explanation": "Add an S3 trust policy to a KMS key resource policy for SNS subscriptions."
+          },
+          "@aws-cdk/aws-ec2:requirePrivateSubnetsForEgressOnlyInternetGateway": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the EgressOnlyGateway resource is only created if private subnets are defined in the dual-stack VPC."
+          },
+          "@aws-cdk/aws-ec2-alpha:useResourceIdForVpcV2Migration": {
+            "recommendedValue": false,
+            "explanation": "When enabled, use resource IDs for VPC V2 migration"
+          },
+          "@aws-cdk/aws-s3:publicAccessBlockedByDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, setting any combination of options for BlockPublicAccess will automatically set true for any options not defined."
+          },
+          "@aws-cdk/aws-lambda:useCdkManagedLogGroup": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CDK creates and manages loggroup for the lambda function"
+          },
+          "@aws-cdk/aws-elasticloadbalancingv2:networkLoadBalancerWithSecurityGroupByDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, Network Load Balancer will be created with a security group by default."
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:httpInvokeDynamicJsonPathEndpoint": {
+            "recommendedValue": true,
+            "explanation": "When enabled, allows using a dynamic apiEndpoint with JSONPath format in HttpInvoke tasks.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-ecs-patterns:uniqueTargetGroupId": {
+            "recommendedValue": true,
+            "explanation": "When enabled, ECS patterns will generate unique target group IDs to prevent conflicts during load balancer replacement"
+          }
+        }
+      }
+    }
+  },
+  "minimumCliVersion": "2.1033.0"
+}

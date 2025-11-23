@@ -1,0 +1,751 @@
+{
+ "Description": "An auto-generated nested stack for the @function directive.",
+ "AWSTemplateFormatVersion": "2010-09-09",
+ "Conditions": {
+  "HasEnvironmentParameter": {
+   "Fn::Not": [
+    {
+     "Fn::Equals": [
+      "NONE",
+      "NONE"
+     ]
+    }
+   ]
+  },
+  "CDKMetadataAvailable": {
+   "Fn::Or": [
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "af-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-3"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-south-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-3"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-4"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ca-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ca-west-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "cn-north-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "cn-northwest-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-central-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-north-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-south-2"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-3"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "il-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "me-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "me-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "sa-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-east-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-west-1"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Equals": [
+      {
+       "Ref": "AWS::Region"
+      },
+      "us-west-2"
+     ]
+    }
+   ]
+  }
+ },
+ "Resources": {
+  "FnVincularFamiliarLambdaDataSourceServiceRoleB12A9DFF": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "appsync.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "Tags": [
+     {
+      "Key": "amplify:deployment-type",
+      "Value": "sandbox"
+     },
+     {
+      "Key": "amplify:friendly-name",
+      "Value": "amplifyData"
+     },
+     {
+      "Key": "created-by",
+      "Value": "amplify"
+     }
+    ]
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVincularFamiliarLambdaDataSource/ServiceRole/Resource"
+   }
+  },
+  "FnVincularFamiliarLambdaDataSourceServiceRoleDefaultPolicy244C5917": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": "lambda:InvokeFunction",
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddatalinkfamilylambda785930C0Arn"
+        },
+        {
+         "Fn::Join": [
+          "",
+          [
+           {
+            "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddatalinkfamilylambda785930C0Arn"
+           },
+           ":*"
+          ]
+         ]
+        }
+       ]
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "FnVincularFamiliarLambdaDataSourceServiceRoleDefaultPolicy244C5917",
+    "Roles": [
+     {
+      "Ref": "FnVincularFamiliarLambdaDataSourceServiceRoleB12A9DFF"
+     }
+    ]
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVincularFamiliarLambdaDataSource/ServiceRole/DefaultPolicy/Resource"
+   }
+  },
+  "FnVincularFamiliarLambdaDataSource": {
+   "Type": "AWS::AppSync::DataSource",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+    },
+    "LambdaConfig": {
+     "LambdaFunctionArn": {
+      "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddatalinkfamilylambda785930C0Arn"
+     }
+    },
+    "Name": "FnVincularFamiliarLambdaDataSource",
+    "ServiceRoleArn": {
+     "Fn::GetAtt": [
+      "FnVincularFamiliarLambdaDataSourceServiceRoleB12A9DFF",
+      "Arn"
+     ]
+    },
+    "Type": "AWS_LAMBDA"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVincularFamiliarLambdaDataSource/Resource"
+   }
+  },
+  "InvokeFnVincularFamiliarLambdaDataSourceInvokeFnVincularFamiliarLambdaDataSourceAppSyncFunction3FECC4ED": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "FnVincularFamiliarLambdaDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "InvokeFnVincularFamiliarLambdaDataSource",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/b09cefbcaec52272ac7ceaf4a84f2c883de5c0a238ac9f982a6c484ce64cb0eb.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/a20e304512b1fde77dc16ed9d5e0ed03817afcab629ce87ef11c99877b7b1e30.vtl"
+    }
+   },
+   "DependsOn": [
+    "FnVincularFamiliarLambdaDataSource"
+   ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/InvokeFnVincularFamiliarLambdaDataSource/InvokeFnVincularFamiliarLambdaDataSource.AppSyncFunction"
+   }
+  },
+  "MutationvincularFamiliarResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+    },
+    "FieldName": "vincularFamiliar",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "MutationVincularFamiliarAuthFNMutationVincularFamiliarAuthFNAppSyncFunction19046DDF",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "InvokeFnVincularFamiliarLambdaDataSourceInvokeFnVincularFamiliarLambdaDataSourceAppSyncFunction3FECC4ED",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "## [Start] Stash resolver specific context.. **\n$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"vincularFamiliar\"))\n$util.qr($ctx.stash.put(\"authRole\", \"arn:aws:sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:aws:sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n{}\n## [End] Stash resolver specific context.. **"
+      ]
+     ]
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/387d5992f5fc03d05de27289457dcc374a84c42a889acb504aff1031047dde00.vtl"
+    },
+    "TypeName": "Mutation"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/mutationVincularFamiliarResolver"
+   }
+  },
+  "FnVerDashboardFamiliarLambdaDataSourceServiceRole486DD962": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "appsync.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "Tags": [
+     {
+      "Key": "amplify:deployment-type",
+      "Value": "sandbox"
+     },
+     {
+      "Key": "amplify:friendly-name",
+      "Value": "amplifyData"
+     },
+     {
+      "Key": "created-by",
+      "Value": "amplify"
+     }
+    ]
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVerDashboardFamiliarLambdaDataSource/ServiceRole/Resource"
+   }
+  },
+  "FnVerDashboardFamiliarLambdaDataSourceServiceRoleDefaultPolicy5D861580": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": "lambda:InvokeFunction",
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebdfunctionNestedStackfunctionNestedStackResourceF110635COutputsamplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Arn"
+        },
+        {
+         "Fn::Join": [
+          "",
+          [
+           {
+            "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebdfunctionNestedStackfunctionNestedStackResourceF110635COutputsamplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Arn"
+           },
+           ":*"
+          ]
+         ]
+        }
+       ]
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "FnVerDashboardFamiliarLambdaDataSourceServiceRoleDefaultPolicy5D861580",
+    "Roles": [
+     {
+      "Ref": "FnVerDashboardFamiliarLambdaDataSourceServiceRole486DD962"
+     }
+    ]
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVerDashboardFamiliarLambdaDataSource/ServiceRole/DefaultPolicy/Resource"
+   }
+  },
+  "FnVerDashboardFamiliarLambdaDataSource": {
+   "Type": "AWS::AppSync::DataSource",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+    },
+    "LambdaConfig": {
+     "LambdaFunctionArn": {
+      "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebdfunctionNestedStackfunctionNestedStackResourceF110635COutputsamplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Arn"
+     }
+    },
+    "Name": "FnVerDashboardFamiliarLambdaDataSource",
+    "ServiceRoleArn": {
+     "Fn::GetAtt": [
+      "FnVerDashboardFamiliarLambdaDataSourceServiceRole486DD962",
+      "Arn"
+     ]
+    },
+    "Type": "AWS_LAMBDA"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/FnVerDashboardFamiliarLambdaDataSource/Resource"
+   }
+  },
+  "InvokeFnVerDashboardFamiliarLambdaDataSourceInvokeFnVerDashboardFamiliarLambdaDataSourceAppSyncFunction272B5BAE": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "FnVerDashboardFamiliarLambdaDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "InvokeFnVerDashboardFamiliarLambdaDataSource",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/88ec1e8e61885788a363e2443fbb226a89b919e13b4000aed3cb9c828b43ef9b.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/a20e304512b1fde77dc16ed9d5e0ed03817afcab629ce87ef11c99877b7b1e30.vtl"
+    }
+   },
+   "DependsOn": [
+    "FnVerDashboardFamiliarLambdaDataSource"
+   ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/InvokeFnVerDashboardFamiliarLambdaDataSource/InvokeFnVerDashboardFamiliarLambdaDataSource.AppSyncFunction"
+   }
+  },
+  "QueryverDashboardFamiliarResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+    },
+    "FieldName": "verDashboardFamiliar",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "QueryVerDashboardFamiliarAuthFNQueryVerDashboardFamiliarAuthFNAppSyncFunction0656A139",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "InvokeFnVerDashboardFamiliarLambdaDataSourceInvokeFnVerDashboardFamiliarLambdaDataSourceAppSyncFunction272B5BAE",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "## [Start] Stash resolver specific context.. **\n$util.qr($ctx.stash.put(\"typeName\", \"Query\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"verDashboardFamiliar\"))\n$util.qr($ctx.stash.put(\"authRole\", \"arn:aws:sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:aws:sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n{}\n## [End] Stash resolver specific context.. **"
+      ]
+     ]
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/387d5992f5fc03d05de27289457dcc374a84c42a889acb504aff1031047dde00.vtl"
+    },
+    "TypeName": "Query"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/queryVerDashboardFamiliarResolver"
+   }
+  },
+  "MutationVincularFamiliarAuthFNMutationVincularFamiliarAuthFNAppSyncFunction19046DDF": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPINONEDS774E36E0Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationVincularFamiliarAuthFN",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/830fd5a473c43e78ac02d7ec373d9543ca16c5b96b72acdde27ccd8277dec3f2.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/MutationVincularFamiliarAuthFN/MutationVincularFamiliarAuthFN.AppSyncFunction"
+   }
+  },
+  "QueryVerDashboardFamiliarAuthFNQueryVerDashboardFamiliarAuthFNAppSyncFunction0656A139": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPINONEDS774E36E0Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "QueryVerDashboardFamiliarAuthFN",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/830fd5a473c43e78ac02d7ec373d9543ca16c5b96b72acdde27ccd8277dec3f2.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/QueryVerDashboardFamiliarAuthFN/QueryVerDashboardFamiliarAuthFN.AppSyncFunction"
+   }
+  },
+  "CDKMetadata": {
+   "Type": "AWS::CDK::Metadata",
+   "Properties": {
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WNTY7CMAyFz8I+9VRhMeuhiBUajdoDIJO4lWnroDoBoap3HyWsWH1+8vuxYO031Dt8auX8WE18hfWXNJLvIrrRNL00QTxHDmLwqZcV73d9iYP1jPPV4xEjdiEtjrL3U52SuBxsgvQ8pAVLS9NLSxqmBy2bYZxhbcNU/IV/YWL3yvJ9bUb3F1SlqPCTYXQPh+RGigdU2kwuK4vl20UcWIbNSPAEN/16WAu2hnp3U+ZqSRJ5Jmjf/AepT3Z2AAEAAA=="
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-rimiapp-alvaro-sandbox-821d8bbebd/data/amplifyData/FunctionDirectiveStack/CDKMetadata/Default"
+   },
+   "Condition": "CDKMetadataAvailable"
+  }
+ },
+ "Parameters": {
+  "referencetoamplifyrimiappalvarosandbox821d8bbebddatalinkfamilylambda785930C0Arn": {
+   "Type": "String"
+  },
+  "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPI179F5FEBApiId": {
+   "Type": "String"
+  },
+  "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthauthenticatedUserRoleF4C8CDD5Ref": {
+   "Type": "String"
+  },
+  "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthunauthenticatedUserRoleA4FD5231Ref": {
+   "Type": "String"
+  },
+  "referencetoamplifyrimiappalvarosandbox821d8bbebdauthNestedStackauthNestedStackResourceD8E43D0DOutputsamplifyrimiappalvarosandbox821d8bbebdauthamplifyAuthIdentityPool33FEEC3CRef": {
+   "Type": "String"
+  },
+  "referencetoamplifyrimiappalvarosandbox821d8bbebdfunctionNestedStackfunctionNestedStackResourceF110635COutputsamplifyrimiappalvarosandbox821d8bbebdfunctiongetdashboardlambdaF197EDE3Arn": {
+   "Type": "String"
+  },
+  "referencetoamplifyrimiappalvarosandbox821d8bbebddataamplifyDataGraphQLAPINONEDS774E36E0Name": {
+   "Type": "String"
+  }
+ }
+}
