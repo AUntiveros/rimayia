@@ -79,7 +79,9 @@ export const useVoiceAgent = () => {
     return new Promise<void>((resolve, reject) => {
       try {
         // Conectar al backend Python
-        const wsUrl = 'ws://localhost:8000/ws';
+        //const wsUrl = 'ws://localhost:8000/ws';
+        // IMPORTANTE: Usa 'wss://' en lugar de 'https://'
+        const wsUrl = 'wss://squeakiest-campbell-imperfectly.ngrok-free.dev/ws';
         console.log('Conectando a:', wsUrl);
         
         const socket = new WebSocket(wsUrl);
