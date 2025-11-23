@@ -16,5 +16,3 @@ boto3>=1.34.0
 botocore>=1.34.0
 
 # Optional: Only needed for standalone CLI version (example.py)
-pyaudio>=0.2.13
-rx>=3.2.0
