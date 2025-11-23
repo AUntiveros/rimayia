@@ -10,6 +10,42 @@ RIMI es un agente conversacional de voz inteligente que utiliza **Amazon Nova So
 - 📊 **Gestión de datos**: Acceso y registro de información médica del usuario
 - 🔒 **Seguridad**: Manejo de consentimiento y datos sensibles
 
+## 🛠️ Tecnologías Utilizadas
+
+### Backend
+- **Python 3.9+**: Lenguaje de programación principal
+- **FastAPI**: Framework web moderno y de alto rendimiento para APIs
+- **Uvicorn**: Servidor ASGI para aplicaciones asíncronas
+- **WebSockets**: Protocolo de comunicación bidireccional en tiempo real
+- **AsyncIO**: Programación asíncrona nativa de Python
+
+### AWS Services
+- **Amazon Bedrock**: Plataforma de modelos fundacionales de AWS
+- **Amazon Nova Sonic v1**: Modelo multimodal de voz (audio-to-audio)
+- **AWS SDK Bedrock Runtime**: Cliente Python para streaming bidireccional
+- **DynamoDB** (Opcional): Base de datos NoSQL para persistencia de datos
+- **Boto3**: SDK de AWS para Python
+
+### Librerías Clave
+- `aws_sdk_bedrock_runtime`: SDK para interactuar con Bedrock
+- `smithy-aws-core`: Core para credenciales AWS
+- `fastapi`: Framework web asíncrono
+- `uvicorn[standard]`: Servidor ASGI con soporte WebSocket
+- `websockets`: Implementación de WebSocket
+- `pytz`: Manejo de zonas horarias
+- `boto3` & `botocore`: Interacción con servicios AWS
+
+### Frontend (Cliente de Prueba)
+- **HTML5**: Estructura del cliente web
+- **JavaScript (Vanilla)**: Lógica del cliente
+- **Web Audio API**: Captura y reproducción de audio
+- **WebSocket API**: Conexión en tiempo real con el servidor
+
+### Arquitectura
+- **Event-Driven Architecture**: Procesamiento basado en eventos asíncronos
+- **Bidirectional Streaming**: Comunicación full-duplex
+- **Tool Calling Pattern**: Ejecución de funciones mediante el modelo de IA
+
 ## 🏗️ Arquitectura AWS
 
 ### Componentes Principales
